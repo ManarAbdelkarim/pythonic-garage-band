@@ -3,13 +3,11 @@ from abc import abstractclassmethod
 
 class Musician:
     members = []
-    all_bands = []
 
     def __init__(self, name):
 
         self.name = name
         Musician.members.append(self)
-        self.__class__.all_bands.append(self)
 
     @abstractclassmethod
     def __str__(self):
