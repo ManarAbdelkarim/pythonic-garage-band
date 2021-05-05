@@ -78,7 +78,7 @@ class Bassist(Musician):
         return "bom bom buh bom"
 
 
-class Band(Musician):
+class Band():
     def __init__(self, name, members):
 
         self.name = name
