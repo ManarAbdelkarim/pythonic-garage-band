@@ -2,12 +2,13 @@ from abc import abstractclassmethod
 
 
 class Musician:
-    members = []
+    # members = []
 
     def __init__(self, name):
 
         self.name = name
-        Musician.members.append(self)
+        # Musician.members.append(self)
+
 
     @abstractclassmethod
     def __str__(self):
@@ -78,9 +79,9 @@ class Bassist(Musician):
         return "bom bom buh bom"
 
 
-class Band():
+class Band(Musician):
+    instances =[]
     def __init__(self, name, members):
-
         self.name = name
         self.members = members
         Band.instances.append(self.name)
